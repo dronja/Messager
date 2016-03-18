@@ -28,7 +28,7 @@ public class XmppService extends Service {
     public void onCreate() {
         Log.d(TAG,"Создаем сервис");
         super.onCreate();
-        xmpp = MyXMPP.getInstance(XmppService.this, "dronja", "testtest12345678");
+        xmpp = MyXMPP.getInstance(XmppService.this, "login", "password");
         xmpp.connect("onCreateService");
     }
 
